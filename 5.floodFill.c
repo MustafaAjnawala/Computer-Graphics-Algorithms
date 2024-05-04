@@ -83,7 +83,7 @@ void Bfill_Recur(int x, int y)
     }
 }
 
-void Bfill(int xP,int yP,int putCol)
+void Flood_fill_Recur(int xP,int yP,int putCol)
 {
     int screenCol;
     Node *current_pixel;
@@ -126,7 +126,7 @@ int main() {
 
     // Bfill_Recur(150,150);
     // cleardevice();
-    Bfill(150,150,1);
+    Flood_fill_Recur(150,150,1);
 
     getch();
     closegraph();
