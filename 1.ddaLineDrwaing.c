@@ -6,8 +6,9 @@ void dda(int x1, int y1, int x2, int y2)
   dx = x2 - x1;
   dy = y2 - y1;
 
-  if (x1 > x2 && y1 > y2)
+  if (x1 > x2 && y1 > y2) // if P1 is in right-down & P2 is in left-top corner.
   {
+    //swap x and y coordinates
     int temp = x1;
     x1 = x2;
     x2 = temp;
@@ -19,9 +20,9 @@ void dda(int x1, int y1, int x2, int y2)
 
   if (dx != 0)
     m = (float)dy / dx;
-  else //simply plotting the vertical line and exiting
+  else //(dx=0)simply plotting the vertical line and exiting
   {
-    for (y = y1; y <= y2; y++)
+    for (y = y1; y <= y2; y++) //only iterating the y coordinates
     {
       putpixel(x1, y, LIGHTCYAN);
     }
