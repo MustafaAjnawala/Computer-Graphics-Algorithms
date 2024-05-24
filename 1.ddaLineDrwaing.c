@@ -29,7 +29,7 @@ void dda(int x1, int y1, int x2, int y2)
     return;
   }
 
-  if (abs(dx) > abs(dy)) // GENTLE SLOPE
+  if (abs(dx) >= abs(dy)) // GENTLE SLOPE
   {
     yc = y1;
     while (x1 <= x2)
