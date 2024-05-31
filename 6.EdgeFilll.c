@@ -110,7 +110,7 @@ int main() {
     initwindow(640, 480);
 
     int x1 = 100, y1 = 100;
-    int x2 = 400, y2 = 100;
+    int x2 = 400, y2 = 200;
     int x3 = 200, y3 = 300;
 
     bresenham(x1, y1, x2, y2, 1, head1);
